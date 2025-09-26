@@ -4,207 +4,287 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/15.12.0/simpleicons.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
     <title>Trinity Tech Solutions | Home</title>
 </head>
 <body>
     <div class="header">
-        <nav>
-            <a href="index.html"><img src="/images/logo2.png" alt="" width="135px"></a>
+        
+        <nav id="navbar">
+            <a href="index.html"><img src="./images/logo2.png" alt="Trinity Tech Solutions Logo"></a>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Our Services</a></li>
-                <li><a href="projects.html">Latest Projects</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Latest Projects</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
 
-            <a href="" class="btn">Get In Touch</a>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
-        <div class="content">
-            <h4>welcome, <span>To the World of IT</span></h4>
-            <h1>All Your Tech needs<br> provided here</h1>
-            <p>SECURE. INNOVATE. ELEVATE</p>
-
-            <button>Explore</button>
+        <div class="text-box">
+            <h1>WELCOME TO <span>TRINITY</span> TECH SOLUTIONS</h1>
+            <p>Empowering your need for success with tailored <span>DIGITAL & TECH</span> Solutions <br>Where Success is one click away!</p>
+            <a href="about.html" class="hero-btn">More About Us</a>
         </div>
     </div> 
 
-
-  <!------------ABOUT SECTION---------------------->
+    <!------------ABOUT SECTION---------------------->
     <section class="about">
-        <div class="main">
-            <img src="/images/pexels-cottonbro-8720586.jpg" alt="" width="135px" >
+        <div class="heading">
+            <h1>About Us</h1>
+            <p>Learn more about Trinity Tech Solutions</p>
+        </div>
 
-            <div class="about-text">
-                <h2>About Us</h2>
-                <h5>GET TO KNOW TRINITY TECH SOLUTIONS</h5>
-                <p> Trinity Tech Solutions was founded on 3 February 2023 by Vusimuzi Khanyile as a small, home-based IT support service. The company has since evolved to offer custom PC builds and web/software development, targeting individuals and small businesses. It is now recognized for providing dependable, affordable tech solutions.</p>
-                <h5>Mission</h5>
-                <p>To become the preferred local IT provider, offering smart, reliable, and cost-effective tech services.</p>
-                <h5>Vission</h5>
-                <p>: To empower individuals and businesses through professional IT support, custom-built PCs, and innovative software solutions.</p>
-                <button>MORE -></button>
+        <div class="container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="About Trinity Tech Solutions">
+            </div>
+
+            <div class="about-content">
+                <h2>Who We Are</h2>
+                <p>Trinity Tech Solutions is a leading provider of innovative technology solutions, dedicated to helping businesses thrive in the digital age. With a team of experienced professionals, we specialize in delivering customized IT services that drive efficiency, enhance productivity, and foster growth.</p>
+                <h2>Our Mission</h2>
+                <p>Our mission is to empower businesses with cutting-edge technology solutions that enable them to achieve their goals and stay ahead of the competition. We are committed to delivering exceptional service, fostering long-term partnerships, and continuously evolving to meet the ever-changing needs of our clients.</p>
+                <a href="about.html" class="read-more">More About Us</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ---------Counter Section --------- -->
+    <section class="counter-section">
+        <h2 class="section-title">Our Impressive Statistics</h2>
+        <p class="section-subtitle">We take pride in our accomplishments and the value we've delivered to our clients over the years.</p>
+        
+        <div class="counter-wrapper">
+            <div class="counter-item">
+                <i class="fas fa-award"></i>
+                <span class="counter" data-target="10">0</span>
+                <h3>Clients Worked With</h3>
+            </div>
+            
+            <div class="counter-item">
+                <i class="fas fa-smile"></i>
+                <span class="counter" data-target="150">0</span>
+                <h3>Happy Clients</h3>
+            </div>
+
+            <div class="counter-item">
+                <i class="fas fa-briefcase"></i>
+                <span class="counter" data-target="75">0</span>
+                <h3>Projects Completed</h3>
+            </div>
+
+            <div class="counter-item">
+                <i class="fas fa-users"></i>
+                <span class="counter" data-target="50">0</span>
+                <h3>Team Members</h3>
             </div>
         </div>
     </section>
 
    <!------------------ SERVICES SECTION----------------  -->
-    <div class="main-wrapper">
-        <div class="bg-1"></div>
-        <div class="bg-2"></div>
-
-        <div class="top-header">
-           <h1>Our Services</h1> 
+    <section class="services">
+        <div class="heading">
+            <h1>Our Services</h1>
+            <p>Explore the wide range of services we offer to help your business succeed.</p>
         </div>
 
-        <div class="cards-container">
-            <div class="cards">
-                <div class="icon"><i class="las la-code"></i></div>
-                <div class="heading">web & Software Development</div>
-                <div class="text"> We craft responsive websites, powerful web apps, and custom software tailored to your business needs.</div>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="services-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="services-content">
+                    <h2>Web Development</h2>
+                    <p>We create stunning, responsive websites that captivate your audience and drive engagement.</p>
+                </div>
             </div>
 
-            <div class="cards">
-                <div class="icon"><i class="las la-code"></i></div>
-                <div class="heading">IT Technical Support</div>
-                <div class="text">From troubleshooting to network setup, we keep your systems running smoothly and securely.</div>
+            <div class="services-box">
+                <div class="services-icon">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <div class="services-content">
+                    <h2>Software Development</h2>
+                    <p>Our expert team designs and develops custom software solutions that streamline your operations.</p>
+                </div>
             </div>
 
-            <div class="cards">
-                <div class="icon"><i class="las la-code"></i></div>
-                <div class="heading">Custom PC Builds</div>
-                <div class="text">High-performance, purpose-built PCs designed for gaming, business, and creative professionals.
-            </p></div>
+            <div class="services-box">
+                <div class="services-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="services-content">
+                    <h2>IT Support</h2>
+                    <p>We provide reliable IT support services to ensure your technology infrastructure runs smoothly.</p>
+                </div>
             </div>
 
-           
+            <div class="services-box">
+                <div class="services-icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <div class="services-content">
+                    <h2>Custom PC Builds</h2>
+                    <p>Get high-performance custom-built PCs tailored to your specific needs.</p>
+                </div>
+            </div>
+
+            <div class="services-box">
+                <div class="services-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <div class="services-content">
+                    <h2>Photography</h2>
+                    <p>Capture your moments with our professional photography services.</p>
+                </div>
+            </div>
+
+            <div class="services-box">
+                <div class="services-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <div class="services-content">
+                    <h2>Cloud Solutions</h2>
+                    <p>Leverage the power of cloud computing with our comprehensive cloud solutions.</p>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <!-- -------PROJECTS SECTION----------- -->
-     
-  <section class="projects">
-    <h2>Our Projects</h2>
-    <div class="projects-grid">
-
-      <!-- Web & Software Development Project 1 -->
-      <div class="project-card">
-        <img src="/images/sdl-sanjaya-VBVtNgkA3ak-unsplash.jpg" alt="Web Project 1" width="135px">
-        <h3>School Management System</h3>
-        <span>Web & Software Development</span>
-        <p>A web-based platform that helps schools manage students, teachers, and reports efficiently.</p>
-        <a href="#">View Project</a>
-      </div>
-
-      <!-- Web & Software Development Project 2 -->
-      <div class="project-card">
-        <img src="/images/studio-shot-product-images.jpg" alt="Web Project 2" width="135px">
-        <h3>E-commerce Website</h3>
-        <span>Web & Software Development</span>
-        <p>A modern online store with secure checkout, product catalog, and user-friendly design.</p>
-        <a href="#">View Project</a>
-      </div>
-
-      <!-- PC Build Project 1 -->
-      <div class="project-card">
-        <img src="https://via.placeholder.com/350x180" alt="PC Build 1">
-        <h3>Gaming PC Build</h3>
-        <span>Custom PC Builds</span>
-        <p>A high-performance gaming PC with RTX graphics, liquid cooling, and RGB lighting.</p>
-        <a href="#">View Project</a>
-      </div>
-
-      <!-- PC Build Project 2 -->
-      <div class="project-card">
-        <img src="https://via.placeholder.com/350x180" alt="PC Build 2">
-        <h3>Workstation Build</h3>
-        <span>Custom PC Builds</span>
-        <p>A powerful workstation designed for 3D rendering, video editing, and heavy multitasking.</p>
-        <a href="#">View Project</a>
-      </div>
-
-      <!-- IT Support Project 1 -->
-      <div class="project-card">
-        <img src="https://via.placeholder.com/350x180" alt="IT Support 1">
-        <h3>Office Network Setup</h3>
-        <span>IT Support</span>
-        <p>Complete installation of office LAN, secure Wi-Fi, and firewall for a small business.</p>
-        <a href="#">View Project</a>
-      </div>
-
-      <!-- IT Support Project 2 -->
-      <div class="project-card">
-        <img src="https://via.placeholder.com/350x180" alt="IT Support 2">
-        <h3>Cloud Backup Solution</h3>
-        <span>IT Support</span>
-        <p>Setup of cloud storage and automated backup system to keep company data safe.</p>
-        <a href="#">View Project</a>
-      </div>
-
-    </div>
-  </section>
-
-    <!-- --------CONTACT US SECTION----------- -->
-
-    <div class="contact">
-            <h1>Contact Us</h1>
-            <p>We are always ready to hear from you! <br>PHONE <br>011 332 3234 <br>E-mail <br>info@trinitytech.com</p>
-
-            <form action="">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" name="email" id="" placeholder="E-mail" required>
-                <input type="number" name="Phone Number" id="" placeholder="Phone Number">
-                <input type="text" placeholder="subject" required>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message" required>
-
-                </textarea>
-                <input type="submit" value="submit" name="" class="button">
-            </form>
+        <div class="services-btn-container">
+            <a href="services.html" class="read-more">Get Services</a>
         </div>
-
-        <div class="contact-img">
-            <img src="/images/business-partners-shaking-hands-agreement.jpg" alt="" width="134px">
-        </div>
-    </div>
+    </section>
     
+    <!-- -------CTA----------- -->
+    <section class="cta">
+        <h1>Contact us for a <span>FREE</span> Consultation</h1>
+        <a href="contact.html" class="hero-btn">Contact Us</a>
+    </section>
 
-    <!-- --------FOOTER SECTION----- -->
-    <div class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <h3>Contact Us</h3>
-                <p>Email: adminahha@info</p>
-                <p>phone: 011 865 2873</p>
-                <p>address: 124 way street</p>
-            </div>
-
-            <div class="footer-content">
-                <h3>quick links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Our Services</a></li>
-                    <li><a href="projects.html">Latest Projects</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-content">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="facebook.com">Facebook</a></li>
-                    <li><a href="instagram.com">Instagram</a></li>
-                    <li><a href="twitter.com.com">Twitter</a></li>
-                </ul>
-            </div>
+    <!-- ---- projects-- -->
+     <section class="projects">
+        <div class="heading">
+            <h1>Our Latest Projects</h1>
+            <p>Discover some of our recent work and see how we've helped our clients achieve their goals.</p>
         </div>
 
-        <div class="bottom-bar">
-            <p>&copy 2024 Trinity Tech Solutions . All Rights Reserved</p>
+        <div class="gallery">
+            
+            <div class="gallery-container">
+                <div class="img-item img-item1"></div>
+                <div class="img-item img-item2"></div>
+                <div class="img-item img-item3"></div>
+                <div class="img-item img-item4"></div>
+                <div class="img-item img-item5"></div>
+            </div>
+            
+            <div class="gallery-controls">
+                <button class="prev-btn">←</button>
+                <ul class="gallery-nav">
+                    <li></li>
+                    <li></li>
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <button class="next-btn">→</button>
+            </div>
+            <a href="projects.html" class="read-more">View Projects</a>
         </div>
+    </section>
+
+    <!-- -------LOGO CAROUSEL--- -->
+    <section class="carousel">
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="./images/carousel1 (1).png" alt="Microsoft Logo">
+                <img src="./images/carousel1 (2).png" alt="IBM Logo">
+                <img src="./images/carousel1 (3).png" alt="Oracle Logo">
+                <img src="./images/carousel1 (4).png" alt="Amazon Logo">
+                <img src="./images/carousel1 (5).png" alt="Google Logo">
+                <img src="./images/carousel1 (6).png" alt="Microsoft Logo">
+                <img src="./images/carousel1 (7).png" alt="IBM Logo">
+                <img src="./images/carousel1 (8).png" alt="Oracle Logo">
+                <img src="./images/carousel1 (9).png" alt="Amazon Logo">
+                <img src="./images/carousel1 (10).png" alt="Google Logo">
+            </div>
+        </div>
+    </section>
+
+    <!------------------ CONTACT US ----------------->
+   <section class="ContactUs">
+        <div class="heading">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Reach out to us for any inquiries or support.</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="read-more">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><i class="fa fa-phone"></i>+27 788 88774 44</p>
+                <p><i class="fa fa-envelope"></i>info@trinitytech.com</p>
+                <p><i class="fa fa-map-marker-alt"></i>Khutsong South, Carletonville, Naledi Street 2499</p>
+                <p><i class="fa fa-clock"></i>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                <p><i class="fa fa-clock"></i>Saturday: 10:00 AM - 2:00 PM</p>
+            </div>
+        </div>
+   </section>
+
+    <!------------------ FOOTER ----------------->
+    <section class="footer">
+    <h4>About Us</h4>
+    <p>Trinity Tech Solutions is committed to delivering innovative technology solutions that drive business growth.</p>
+
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
     </div>
+
+    <!-- Navigation Links -->
+    <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Latest Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    
+    <p class="footer-copy">&copy; 2025 Trinity Tech Solutions. All rights reserved.</p>
+</section>
+
+    <script src="JS/script.js"></script>
 </body>
 </html>
