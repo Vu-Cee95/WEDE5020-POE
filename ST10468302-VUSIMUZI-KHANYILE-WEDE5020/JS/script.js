@@ -419,3 +419,5 @@ document.querySelector(".logos").appendChild(copy);
                 alert('Please fill in all fields.');
             }
         });
+
+        

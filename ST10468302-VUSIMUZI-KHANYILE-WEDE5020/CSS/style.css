@@ -24,6 +24,12 @@ body {
 }
 
 /* ===== NAVIGATION ===== */
+body.nav-still nav {
+    background-color: #000222 !important;
+    border-radius: 0 0 8px 8px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+}
+
 nav {
     position: fixed;
     width: 100%;
@@ -327,23 +333,30 @@ span {
             }
         }
 /* =======About us page ====== */
+
+
 .about-us {
-    padding: 30px 10px;
+    padding: 50px 20px;
     background: white;
     text-align: center;
+    min-height: 100vh;
 }
 
 .about-us .heading {
     text-align: center;
-    margin-bottom: 15px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 100%;
 }
 
 .about-us .heading h1 {
     position: relative;
-    padding-bottom: 12px;
-    margin-bottom: 15px;
-    font-size: 2rem;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 1.8rem;
     color: #000222;
+    font-weight: 600;
+    letter-spacing: 0.3px;
 }
 
 .about-us .heading h1::after {
@@ -352,93 +365,144 @@ span {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background-color: red;
-    border-radius: 2px;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #ff0000, #ff6b6b);
+    border-radius: 1px;
 }
 
 .about-us .heading p {
     color: #666;
-    font-size: 1rem;
-    max-width: 800px;
+    font-size: 0.9rem;
+    max-width: 600px;
     margin: 0 auto;
+    line-height: 1.5;
+    font-weight: 300;
 }
 
+/* About Container */
 .about-container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    padding: 35px 25px;
+    gap: 25px;
+    padding: 30px 20px;
     text-align: center;
-    background: linear-gradient(rgba(0,2,34,0.8), rgba(0,2,34,0.8)), 
-                url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background: linear-gradient(135deg, rgba(0,2,34,0.95) 0%, rgba(0,10,60,0.95) 100%);
     border-radius: 12px;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     color: white;
-    margin: 8px auto;
+    margin: 15px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
 }
 
+.about-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.about-container > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* About Boxes */
 .about-box {
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    border-radius: 12px;
-    padding: 35px 30px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
-    min-height: 350px;
+    min-height: 220px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.about-box:hover::before {
+    left: 100%;
 }
 
 .about-box:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 0, 0, 0.3);
 }
 
 .about-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: red;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #ff0000;
     display: inline-block;
+    transition: all 0.3s ease;
 }
 
-.about-us .about-content h2 {
+.about-box:hover .about-icon {
+    transform: scale(1.05);
+    color: #ff6b6b;
+}
+
+.about-content h2 {
     color: #fff;
     margin-bottom: 15px;
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
-.about-us .about-content p {
+.about-content p {
     color: rgba(255, 255, 255, 0.9);
-    line-height: 1.6;
-    font-size: 1.05rem;
-    margin-bottom: 12px;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    font-weight: 300;
 }
 
-/* Team Section Styling - Inside the same container */
+/* Team Section */
 .team-section {
     grid-column: 1 / -1;
-    margin-top: 30px;
+    margin-top: 35px;
     padding-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .team-section h2 {
     position: relative;
-    padding-bottom: 12px;
-    margin-bottom: 30px;
-    font-size: 1.8rem;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
     color: #fff;
     display: inline-block;
+    font-weight: 600;
 }
 
 .team-section h2::after {
@@ -447,139 +511,227 @@ span {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background-color: red;
-    border-radius: 2px;
+    width: 70px;
+    height: 2px;
+    background: linear-gradient(90deg, #ff0000, #ff6b6b);
+    border-radius: 1px;
 }
 
 .team-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .team-box {
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    border-radius: 12px;
-    padding: 30px 20px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #ff0000, #ff6b6b);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.team-box:hover::before {
+    transform: scaleX(1);
 }
 
 .team-box:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 .team-box img {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid rgba(255, 255, 255, 0.3);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    filter: grayscale(0.3);
+}
+
+.team-box:hover img {
+    border-color: #ff0000;
+    filter: grayscale(0);
+    transform: scale(1.03);
 }
 
 .team-box h3 {
     color: #fff;
-    margin-bottom: 10px;
-    font-size: 1.4rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .team-box p {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 1rem;
-    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    font-weight: 300;
 }
 
 .team-social {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 .team-social a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-social a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ff0000;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.team-social a:hover::before {
+    transform: scale(1);
 }
 
 .team-social a:hover {
-    background: red;
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 
 .team-social i {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.team-social a:hover i {
+    color: white;
 }
 
 /* Responsive Design */
 @media (max-width: 992px) {
     .about-container {
         grid-template-columns: 1fr;
-        max-width: 800px;
+        max-width: 700px;
+        gap: 20px;
+        padding: 25px 20px;
     }
     
     .about-box {
-        min-height: 300px;
-        padding: 30px 25px;
+        min-height: 200px;
+        padding: 20px;
+    }
+    
+    .team-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
     }
 }
 
 @media (max-width: 768px) {
     .about-us {
-        padding: 20px 10px;
+        padding: 40px 15px;
     }
     
     .about-us .heading h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     
     .about-container {
         gap: 20px;
-        padding: 25px 15px;
-    }
-    
-    .about-box {
-        padding: 25px 20px;
-        min-height: 280px;
-    }
-    
-    .team-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .team-box img {
-        width: 120px;
-        height: 120px;
-    }
-}
-
-@media (max-width: 480px) {
-    .about-container {
-        padding: 20px 10px;
+        padding: 20px 15px;
+        margin: 15px auto;
     }
     
     .about-box {
         padding: 20px 15px;
-        min-height: 260px;
+        min-height: 180px;
     }
     
     .about-icon {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
+    }
+    
+    .team-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .team-box {
+        padding: 20px 15px;
+    }
+    
+    .team-box img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us {
+        padding: 30px 10px;
+    }
+    
+    .about-us .heading h1 {
+        font-size: 1.3rem;
+    }
+    
+    .about-us .heading p {
+        font-size: 0.85rem;
+    }
+    
+    .about-container {
+        padding: 20px 15px;
+    }
+    
+    .about-box {
+        padding: 18px 12px;
+        min-height: 160px;
+    }
+    
+    .about-icon {
+        font-size: 1.5rem;
+    }
+    
+    .about-content h2 {
+        font-size: 1.1rem;
+    }
+    
+    .about-content p {
+        font-size: 0.85rem;
     }
     
     .team-container {
@@ -587,14 +739,15 @@ span {
     }
     
     .team-social a {
-        width: 36px;
-        height: 36px;
+        width: 30px;
+        height: 30px;
     }
     
     .team-social i {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
+
 
 
 /* ===== COUNTER SECTION ===== */
@@ -808,8 +961,9 @@ span {
 .heading h1 {
     position: relative;
     padding-bottom: 12px;
+    margin-top: 70px;
     margin-bottom: 15px;
-    font-size: 2rem;
+    font-size: 1.8rem; /* Reduced from 2rem to 1.8rem */
     color: #000222;
 }
 
@@ -995,7 +1149,7 @@ span {
     }
     
     .heading h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem; /* Reduced for mobile */
     }
 }
 
@@ -1018,6 +1172,10 @@ span {
     
     .card-front h2, .card-back h3 {
         font-size: 1.1rem;
+    }
+    
+    .heading h1 {
+        font-size: 1.4rem; /* Reduced for small mobile */
     }
 }
 
@@ -1210,13 +1368,13 @@ span {
             background: white;
             text-align: center;
             max-width: 1200px;
-            margin: 30px auto;
             border-radius: 12px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .heading {
             text-align: center;
+            margin-top: 20px;
             margin-bottom: 50px;
         }
 
