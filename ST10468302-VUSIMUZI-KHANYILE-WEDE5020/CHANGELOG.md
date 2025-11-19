@@ -8,6 +8,31 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [1.3.0] - 2025-11-19 — Part 3 POE Corrections
+
+### Added
+- Real-time form validation on all pages.
+- SweetAlert success popup for valid submissions.
+- Consolidated JavaScript into single `JS/script.js` file with modular functions and inline comments.
+- Additional ARIA labels and accessibility improvements.
+- README Part 3 section and updated References.
+
+### Changed
+- Refactored JavaScript for improved maintainability and readability.
+- Improved navigation responsiveness and mobile menu behaviour.
+- Revised contact form layout for improved usability on mobile.
+- Increased color contrast and refined animations for performance.
+
+### Fixed
+- Resolved nine JavaScript runtime errors found in Part 2.
+- Fixed contact form validation issues and inconsistent input sizing on mobile.
+- Corrected gallery modal close bug and footer alignment problems.
+- Addressed cross-browser layout inconsistencies.
+
+### Removed
+- Removed duplicate and unused functions and redundant CSS classes.
+
+
 ### Planned Features
 - [ ] Backend integration for contact form processing
 - [ ] Client testimonial section

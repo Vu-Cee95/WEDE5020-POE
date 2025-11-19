@@ -2,106 +2,182 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Trinity Tech Solutions - our mission, vision, team, and expertise in web development, software solutions, and IT services in South Africa.">
+    <meta name="keywords" content="about Trinity Tech Solutions, technology company South Africa, IT team, mission and vision, web development company, software experts">
+    <meta name="author" content="Trinity Tech Solutions">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="About Trinity Tech Solutions | Our Team & Mission">
+    <meta property="og:description" content="Meet the team behind Trinity Tech Solutions. Learn about our mission to deliver innovative technology solutions and meet our expert professionals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.trinitytechsolutions.co.za/about">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.trinitytechsolutions.co.za/about">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Trinity Tech Solutions",
+      "description": "Learn about our mission, vision, and the team behind Trinity Tech Solutions - leading technology solutions provider in South Africa.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Trinity Tech Solutions",
+        "url": "https://www.trinitytechsolutions.co.za"
+      },
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Trinity Tech Solutions",
+        "description": "Leading provider of innovative technology solutions including web development, software solutions, IT support, and custom PC builds.",
+        "foundingDate": "2020",
+        "numberOfEmployees": "50",
+        "mission": "To provide innovative and efficient technology solutions that empower businesses to achieve their goals through creativity and technology."
+      }
+    }
+    </script>
+
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>Trinity Tech Solutions | About Us</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script defer>
+
+    <title>About Trinity Tech Solutions | Our Team & Mission in South Africa</title>
 </head>
 <body class="nav-still">
-    
+
         <nav id="navbar">
-            <a href="index.html"><img src="./images/logo2.png" alt="Trinity Tech Solutions Logo"></a>
+            <a href="index.html" aria-label="Trinity Tech Solutions Home">
+                <img src="./images/logo2.png" alt="Trinity Tech Solutions Logo - Leading Technology Company" width="200" height="60" loading="lazy">
+            </a>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-times" onclick="hideMenu()" aria-label="Close menu"></i>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html" class="active">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="projects.html">Latest Projects</a></li>
                     <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()" aria-label="Open menu"></i>
         </nav>
-    </div> 
+    </div>
 
-    
+
     <section class="about-us">
     <div class="heading">
-      <h1>About Us</h1>
-      <p>Thank you for choosing us. Your one-stop shop for online solutions for all and any of your business needs.</p>
+      <h1>About Trinity Tech Solutions</h1>
+      <p>Thank you for choosing Trinity Tech Solutions - your one-stop shop for comprehensive online solutions for all your business technology needs in South Africa.</p>
     </div>
 
     <div class="about-container">
-      <!-- Mission and Vision Boxes -->
-      <div class="about-box">
-        <i class="fas fa-book about-icon"></i>
-        <div class="about-content">
-          <h2>Our Mission</h2>
-          <p>To provide innovative and efficient technology solutions that empower businesses to achieve their goals. 
-            We strive to deliver value through creativity and technology. Our mission is to continuously improve and adapt to meet client needs.</p>
+      <!-- Mission and Vision Boxes with Accordion Effect -->
+<div class="about-box accordion-box">
+    <div class="accordion-header accordion">
+        <div style="display: flex; align-items: center;">
+            <i class="fas fa-book about-icon" aria-hidden="true"></i>
+            <h2 class="accordion-title">Our Mission</h2>
         </div>
-      </div>
+        <i class="fas fa-chevron-down accordion-icon" aria-hidden="true"></i>
+    </div>
+    <div class="accordion-content">
+        <p>To provide innovative and efficient technology solutions that empower businesses to achieve their goals.
+            We strive to deliver value through creativity and technology. Our mission is to continuously improve and adapt to meet client needs in web development, software solutions, and IT services across South Africa.</p>
+    </div>
+</div>
 
-      <div class="about-box">
-        <i class="fas fa-eye about-icon"></i>
-        <div class="about-content">
-          <h2>Our Vision</h2>
-          <p>To be a leading technology solutions provider, recognized for our commitment to excellence and innovation. 
-            We envision a future where businesses thrive through digital transformation. Our vision is to inspire growth and long-term success for our clients.</p>
+<div class="about-box accordion-box">
+    <div class="accordion-header accordion">
+        <div style="display: flex; align-items: center;">
+            <i class="fas fa-eye about-icon" aria-hidden="true"></i>
+            <h2 class="accordion-title">Our Vision</h2>
         </div>
-      </div>
-      
+        <i class="fas fa-chevron-down accordion-icon" aria-hidden="true"></i>
+    </div>
+    <div class="accordion-content">
+        <p>To be a leading technology solutions provider in South Africa, recognized for our commitment to excellence and innovation.
+            We envision a future where businesses thrive through digital transformation. Our vision is to inspire growth and long-term success for our clients through cutting-edge technology solutions.</p>
+    </div>
+</div>
+
       <!-- Team Section -->
       <div class="team-section">
-        <h2>Meet Our Team</h2>
+        <h2>Meet Our Technology Experts</h2>
+        <p class="team-description">Our skilled team of technology professionals brings years of experience in web development, software engineering, and IT solutions to deliver exceptional results for our clients.</p>
         <div class="team-container">
           <div class="team-box">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&q=80" alt="Portrait of Vusimuzi Khanyile, Founder & CEO">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&q=80" alt="Vusimuzi Khanyile - Founder & CEO of Trinity Tech Solutions" width="100" height="100" loading="lazy">
             <h3>Vusimuzi Khanyile</h3>
             <p>Founder & CEO</p>
             <div class="team-social">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="mailto:vusimuzi@fifikay.com"><i class="fas fa-envelope"></i></a>
+              <a href="https://facebook.com/trinitytechsolutions" aria-label="Connect with Vusimuzi on Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/trinitytech" aria-label="Follow Vusimuzi on Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://linkedin.com/in/vusimuzi-khanyile" aria-label="Connect with Vusimuzi on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:vusimuzi@trinitytech.com" aria-label="Email Vusimuzi"><i class="fas fa-envelope"></i></a>
             </div>
           </div>
           <div class="team-box">
-            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80" alt="Portrait of Alice Johnson, CTO">
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80" alt="Alice Johnson - Chief Technology Officer at Trinity Tech Solutions" width="100" height="100" loading="lazy">
             <h3>Alice Johnson</h3>
             <p>Chief Technology Officer</p>
             <div class="team-social">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="mailto:alice@fifikay.com"><i class="fas fa-envelope"></i></a>
+              <a href="https://facebook.com/trinitytechsolutions" aria-label="Connect with Alice on Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/trinitytech" aria-label="Follow Alice on Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://linkedin.com/in/alice-johnson" aria-label="Connect with Alice on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:alice@trinitytech.com" aria-label="Email Alice"><i class="fas fa-envelope"></i></a>
             </div>
           </div>
           <div class="team-box">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80" alt="Portrait of Michael Smith, Lead Developer">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80" alt="Michael Smith - Lead Developer at Trinity Tech Solutions" width="100" height="100" loading="lazy">
             <h3>Michael Smith</h3>
             <p>Lead Developer</p>
             <div class="team-social">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="mailto:michael@fifikay.com"><i class="fas fa-envelope"></i></a>
+              <a href="https://facebook.com/trinitytechsolutions" aria-label="Connect with Michael on Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/trinitytech" aria-label="Follow Michael on Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://linkedin.com/in/michael-smith" aria-label="Connect with Michael on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:michael@trinitytech.com" aria-label="Email Michael"><i class="fas fa-envelope"></i></a>
             </div>
           </div>
           <div class="team-box">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80" alt="Portrait of Sophia Lee, Marketing Manager">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80" alt="Sophia Lee - Marketing Manager at Trinity Tech Solutions" width="100" height="100" loading="lazy">
             <h3>Sophia Lee</h3>
             <p>Marketing Manager</p>
             <div class="team-social">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="mailto:sophia@fifikay.com"><i class="fas fa-envelope"></i></a>
+              <a href="https://facebook.com/trinitytechsolutions" aria-label="Connect with Sophia on Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/trinitytech" aria-label="Follow Sophia on Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://linkedin.com/in/sophia-lee" aria-label="Connect with Sophia on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:sophia@trinitytech.com" aria-label="Email Sophia"><i class="fas fa-envelope"></i></a>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Company Values Section -->
+      <div class="values-section" style="grid-column: 1 / -1; margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.2);">
+        <h2>Our Core Values</h2>
+        <div class="values-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 25px;">
+          <div class="value-item" style="background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 8px; text-align: center;">
+            <i class="fas fa-lightbulb" style="font-size: 2rem; color: #ff0000; margin-bottom: 15px;"></i>
+            <h3 style="color: #fff; margin-bottom: 10px;">Innovation</h3>
+            <p style="color: rgba(255, 255, 255, 0.9);">We embrace cutting-edge technology and creative solutions to solve complex business challenges.</p>
+          </div>
+          <div class="value-item" style="background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 8px; text-align: center;">
+            <i class="fas fa-handshake" style="font-size: 2rem; color: #ff0000; margin-bottom: 15px;"></i>
+            <h3 style="color: #fff; margin-bottom: 10px;">Partnership</h3>
+            <p style="color: rgba(255, 255, 255, 0.9);">We build lasting relationships with our clients, working collaboratively to achieve their goals.</p>
+          </div>
+          <div class="value-item" style="background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 8px; text-align: center;">
+            <i class="fas fa-award" style="font-size: 2rem; color: #ff0000; margin-bottom: 15px;"></i>
+            <h3 style="color: #fff; margin-bottom: 10px;">Excellence</h3>
+            <p style="color: rgba(255, 255, 255, 0.9);">We are committed to delivering the highest quality solutions and exceptional customer service.</p>
           </div>
         </div>
       </div>
@@ -110,15 +186,15 @@
 
     <!------------------ FOOTER ----------------->
     <section class="footer">
-    <h4>About Us</h4>
-    <p>Trinity Tech Solutions is committed to delivering innovative technology solutions that drive business growth.</p>
+    <h4>About Trinity Tech Solutions</h4>
+    <p>Trinity Tech Solutions is committed to delivering innovative technology solutions that drive business growth and digital transformation across South Africa.</p>
 
     <div class="icons">
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-x-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-whatsapp"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
+        <a href="https://facebook.com/trinitytechsolutions" aria-label="Follow us on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/trinitytech" aria-label="Follow us on Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://instagram.com/trinitytechsolutions" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/277888877444" aria-label="Contact us on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://linkedin.com/company/trinity-tech-solutions" aria-label="Follow us on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
     </div>
 
     <!-- Navigation Links -->
@@ -128,11 +204,12 @@
         <a href="services.html">Services</a>
         <a href="projects.html">Latest Projects</a>
         <a href="contact.html">Contact</a>
+        <a href="enquiry.html">Enquiry</a>
     </div>
 
-    
+
     <p class="footer-copy">&copy; 2025 Trinity Tech Solutions. All rights reserved.</p>
 </section>
-    <script src="JS/script.js"></script>
+    <script src="JS/script.js"></script defer>
 </body>
 </html>

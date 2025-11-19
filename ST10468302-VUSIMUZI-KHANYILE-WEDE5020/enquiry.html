@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enquire about Trinity Tech Solutions services, products, volunteer opportunities, or sponsorship programs. Get customized quotes and information.">
+    <meta name="keywords" content="technology enquiry, web development quotes, IT services, volunteer tech, sponsorship opportunities, custom solutions">
+    <meta name="author" content="Trinity Tech Solutions">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Make an Enquiry | Trinity Tech Solutions">
+    <meta property="og:description" content="Get quotes for web development, IT services, or enquire about volunteer and sponsorship opportunities with Trinity Tech Solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.trinitytechsolutions.co.za/enquiry">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.trinitytechsolutions.co.za/enquiry">
+    
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/enquiry.css">
+    
+    <title>Enquiry Form | Trinity Tech Solutions</title>
+</head>
+<body class="nav-still">
+    
+    <nav id="navbar">
+        <a href="index.html" class="logo" aria-label="Trinity Tech Solutions Home">
+            <img src="./images/logo2.png" alt="Trinity Tech Solutions Logo - Make an Enquiry" width="200" height="60">
+        </a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" id="closeMenu" aria-label="Close menu" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Latest Projects</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="enquiry.html" class="active">Enquiry</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" id="openMenu" aria-label="Open menu" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- Enquiry Form Section -->
+    <section class="enquiry-form-section" id="enquiry-form">
+        <div class="heading">
+            <h1>Tell Us About Your Needs</h1>
+            <p>Fill out the form below and we'll get back to you with detailed information</p>
+        </div>
+
+        <div class="enquiry-form-container">
+            <!-- Enhanced Enquiry Form -->
+            <form id="enquiryForm" action="https://formspree.io/f/mqanbjwq" method="POST" novalidate class="enquiry-form" data-reliable="true">
+                <!-- Personal Information Section -->
+                <div class="form-section">
+                    <h3 class="section-title">Personal Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required
+                                   minlength="2" maxlength="100">
+                            <span class="error-message" id="fullNameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company" placeholder="Enter your company name"
+                                   maxlength="100">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enquiry Type Section -->
+                <div class="form-section">
+                    <h3 class="section-title">Enquiry Type</h3>
+                    <div class="form-group">
+                        <label for="enquiryType">What are you interested in? *</label>
+                        <select id="enquiryType" name="enquiryType" required>
+                            <option value="">Please select an option</option>
+                            <option value="web-development">Web Development Services</option>
+                            <option value="software-development">Software Development</option>
+                            <option value="it-support">IT Support Services</option>
+                            <option value="custom-pc">Custom PC Builds</option>
+                            <option value="photography">Photography Services</option>
+                            <option value="cloud-solutions">Cloud Solutions</option>
+                            <option value="volunteer">Volunteer Opportunity</option>
+                            <option value="sponsorship">Sponsorship/Partnership</option>
+                            <option value="other">Other (Please specify)</option>
+                        </select>
+                        <span class="error-message" id="enquiryTypeError"></span>
+                    </div>
+
+                    <!-- Dynamic fields based on enquiry type -->
+                    <div id="dynamicFields" class="dynamic-fields">
+                        <!-- Fields will be dynamically inserted here based on selection -->
+                    </div>
+                </div>
+
+                <!-- Project Details Section -->
+                <div class="form-section">
+                    <h3 class="section-title">Project Details</h3>
+                    <div class="form-group">
+                        <label for="projectDescription">Tell us about your project or requirements *</label>
+                        <textarea id="projectDescription" name="projectDescription" rows="5" 
+                                  placeholder="Please describe your project, timeline, budget range, and any specific requirements..." 
+                                  required minlength="10" maxlength="2000"></textarea>
+                        <span class="error-message" id="projectDescriptionError"></span>
+                        <div class="char-counter">0/2000 characters</div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="budget">Estimated Budget (ZAR)</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-5000">Under R5,000</option>
+                                <option value="5000-15000">R5,000 - R15,000</option>
+                                <option value="15000-30000">R15,000 - R30,000</option>
+                                <option value="30000-50000">R30,000 - R50,000</option>
+                                <option value="50000-100000">R50,000 - R100,000</option>
+                                <option value="over-100000">Over R100,000</option>
+                                <option value="not-sure">Not sure / Need quote</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">Project Timeline *</label>
+                            <select id="timeline" name="timeline" required>
+                                <option value="">Select timeline</option>
+                                <option value="urgent">Urgent (Within 2 weeks)</option>
+                                <option value="1-month">Within 1 month</option>
+                                <option value="1-3-months">1-3 months</option>
+                                <option value="3-6-months">3-6 months</option>
+                                <option value="flexible">Flexible / Not sure</option>
+                            </select>
+                            <span class="error-message" id="timelineError"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Information Section -->
+                <div class="form-section">
+                    <h3 class="section-title">Additional Information</h3>
+                    <div class="form-group">
+                        <label for="howHeard">How did you hear about us?</label>
+                        <select id="howHeard" name="howHeard">
+                            <option value="">Please select</option>
+                            <option value="search-engine">Search Engine (Google, etc.)</option>
+                            <option value="social-media">Social Media</option>
+                            <option value="referral">Referral</option>
+                            <option value="previous-client">Previous Client</option>
+                            <option value="event">Event or Conference</option>
+                            <option value="other-source">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                        <label for="newsletter">Subscribe to our newsletter for tech tips and updates</label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                        <label for="privacyPolicy">I agree to the <a href="privacy.html" target="_blank">Privacy Policy</a> and terms of service *</label>
+                        <span class="error-message" id="privacyPolicyError"></span>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span class="btn-text">Submit Enquiry</span>
+                        <span class="btn-loading">
+                            <i class="fas fa-spinner fa-spin"></i> Processing...
+                        </span>
+                    </button>
+                    <button type="reset" class="reset-btn">Clear Form</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Trinity Tech Solutions</h4>
+        <p>Trinity Tech Solutions is committed to delivering innovative technology solutions that drive business growth and digital transformation across South Africa.</p>
+
+        <div class="icons">
+            <a href="https://facebook.com/trinitytechsolutions" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/trinitytech" aria-label="Follow us on Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://instagram.com/trinitytechsolutions" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/277888877444" aria-label="Contact us on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://linkedin.com/company/trinity-tech-solutions" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Latest Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="enquiry.html">Enquiry</a>
+        </div>
+
+        <p class="footer-copy">&copy; 2025 Trinity Tech Solutions. All rights reserved.</p>
+    </section>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- JavaScript -->
+    <script src="JS/script.js"></script>
+</body>
+</html>

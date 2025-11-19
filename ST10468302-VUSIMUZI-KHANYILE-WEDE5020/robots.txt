@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Block private/sensitive areas
+Disallow: /admin/
+Disallow: /config/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /backup/
+
+# Sitemap location
+Sitemap: https://www.trinitytechsolutions.co.za/sitemap.xml

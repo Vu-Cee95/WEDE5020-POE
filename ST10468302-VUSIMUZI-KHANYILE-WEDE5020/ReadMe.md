@@ -351,3 +351,56 @@ Last Updated: October 2025
 
 
 
+
+
+
+## 📌 Part 3: Updates Implemented Based on Feedback (Submitted 2025-11-19)
+
+Following the release of marks and feedback for **Part 2**, the site was reviewed and corrections were implemented to address the lecturer's feedback. All edits are documented in the `CHANGELOG.md` (see the [1.3.0] entry).
+
+### Summary of Part 3 Corrections
+- **Form Validation & UX**
+  - Real-time client-side validation on all contact and quick-enquiry forms.
+  - Clear, custom error messages and inline validation hints.
+  - SweetAlert success popup after valid submission and form reset.
+  - Improved layout of the contact form for mobile.
+
+- **JavaScript & Code Quality**
+  - Merged and refactored multiple JS files into a single `JS/script.js` (modular functions and comments added).
+  - Fixed runtime errors (9 issues found and resolved) and improved error handling.
+  - Removed duplicate/unneeded functions and improved naming conventions.
+
+- **Accessibility (A11y)**
+  - Added ARIA labels and roles to interactive elements.
+  - Ensured all images have descriptive `alt` attributes.
+  - Improved keyboard focus styles and tab order.
+  - Form fields now have associated `<label>` elements and `aria-describedby` where necessary.
+
+- **Responsiveness & Visual Refinements**
+  - Resolved layout issues on small screens (input sizing, footer alignment, gallery modal behavior).
+  - Improved animation performance and reduced motion where appropriate.
+  - Increased color contrast for readability.
+
+- **SEO & Technical**
+  - Updated heading hierarchy and added semantic HTML5 tags.
+  - Meta descriptions improved across pages.
+  - Asset optimisation (image sizes and lazy-loading) to improve Lighthouse scores.
+
+- **Documentation**
+  - README updated with Part 3 summary, changelog entry, and references.
+  - CHANGELOG updated with the Part 3 entry (version `1.3.0`).
+
+
+## References
+
+- MDN Web Docs - HTML, CSS, JavaScript.  
+- Google Fonts (Poppins).  
+- Font Awesome icons.  
+- SweetAlert (SweetAlert2) for user-friendly alerts.  
+- Keep a Changelog — keepachangelog.com.  
+- Semantic Versioning — semver.org.  
+- Google Maps Embed API documentation.  
+- Unsplash — placeholder / stock images.  
+- Lighthouse & PageSpeed Insights (Google Developers).  
+- W3C HTML & ARIA accessibility recommendations.
+

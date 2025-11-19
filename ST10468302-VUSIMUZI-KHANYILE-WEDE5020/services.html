@@ -2,79 +2,220 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trinity Tech Solutions offers comprehensive IT services including web development, software development, IT support, custom PC builds, photography, and cloud solutions in South Africa.">
+    <meta name="keywords" content="web development services, software development, IT support, custom PC builds, cloud solutions, photography services, technology services South Africa">
+    <meta name="author" content="Trinity Tech Solutions">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="IT Services | Web Development & Technology Solutions">
+    <meta property="og:description" content="Professional web development, software solutions, IT support, custom PC builds, and cloud services. Complete technology solutions for businesses in South Africa.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.trinitytechsolutions.co.za/services">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.trinitytechsolutions.co.za/services">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Trinity Tech Solutions Services",
+      "description": "Comprehensive technology services including web development, software development, IT support, custom PC builds, photography, and cloud solutions.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Trinity Tech Solutions",
+        "url": "https://www.trinitytechsolutions.co.za"
+      },
+      "areaServed": "South Africa",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Technology Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Web Development",
+              "description": "Custom websites that drive results with responsive design and SEO optimization"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Software Development",
+              "description": "Custom solutions for your business with API development and system integration"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "IT Support",
+              "description": "Reliable technology assistance with 24/7 help desk and network security"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom PC Builds",
+              "description": "Tailored to your specific needs for gaming, work, or creative tasks"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Photography",
+              "description": "Professional visual content for business or personal use"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cloud Solutions",
+              "description": "Scalable and secure infrastructure with cloud migration services"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>Trinity Tech Solutions | About Us</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script defer>
+
+    <title>IT Services | Web Development, Software & Technology Solutions South Africa</title>
 </head>
 <body class="nav-still">
-    
-        <nav id="navbar">
-            <a href="index.html"><img src="./images/logo2.png" alt="Trinity Tech Solutions Logo"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Latest Projects</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-    </div> 
 
-    
-     <section class="our-services">
+    <nav id="navbar">
+        <a href="index.html" aria-label="Trinity Tech Solutions Home">
+            <img src="./images/logo2.png" alt="Trinity Tech Solutions Logo - Professional IT Services Provider" width="200" height="60" loading="lazy">
+        </a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" aria-label="Close menu"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="projects.html">Latest Projects</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" aria-label="Open menu"></i>
+    </nav>
+
+    <section class="our-services">
         <div class="heading">
-            <h1>Our Services</h1>
-            <p>Explore the wide range of services we offer to help your business succeed. Hover over each card to learn more.</p>
+            <h1>Our Professional IT Services</h1>
+            <p>Explore our comprehensive range of technology services designed to help your business succeed in the digital age. Click on each category to filter services.</p>
+        </div>
+
+        <!-- Service Tabs -->
+        <div class="service-tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="all">All Services</button>
+                <button class="tab-btn" data-tab="development">Development</button>
+                <button class="tab-btn" data-tab="support">IT Support</button>
+                <button class="tab-btn" data-tab="hardware">Hardware</button>
+                <button class="tab-btn" data-tab="creative">Creative</button>
+            </div>
+        </div>
+
+        <!-- ===== SEARCH AND SORT CONTROLS ===== -->
+        <div class="search-sort-container">
+            <div class="search-controls-wrapper">
+                <!-- Search Box -->
+                <div class="search-box">
+                    <div class="search-input-wrapper">
+                        <i class="fas fa-search search-icon" aria-hidden="true"></i>
+                        <input type="text" id="serviceSearch" placeholder="Search services by name, description, or category..." aria-label="Search our services">
+                        <button id="clearSearch" class="clear-search-btn" aria-label="Clear search">
+                            <i class="fas fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sort Controls -->
+                <div class="sort-filter-wrapper">
+                    <div class="sort-controls">
+                        <div class="sort-select-wrapper">
+                            <i class="fas fa-sort sort-icon" aria-hidden="true"></i>
+                            <select id="sortSelect" class="sort-select" aria-label="Sort services by">
+                                <option value="name-asc">Name (A-Z)</option>
+                                <option value="name-desc">Name (Z-A)</option>
+                                <option value="price-asc">Price (Low to High)</option>
+                                <option value="price-desc">Price (High to Low)</option>
+                                <option value="category">Category</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Results Info -->
+                    <div class="results-info">
+                        <span id="resultsCount" class="results-count">Showing all <span class="highlight-count">6</span> services</span>
+                        <button id="resetFilters" class="reset-filters-btn" aria-label="Reset all filters">
+                            <i class="fas fa-redo" aria-hidden="true"></i>
+                            Reset Filters
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="services-container">
             <!-- Web Development Card -->
-            <div class="service-card">
+            <div class="service-card" data-category="development">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="services-icon">
-                            <i class="fas fa-code"></i>
+                            <i class="fas fa-code" aria-hidden="true"></i>
                         </div>
                         <h2>Web Development</h2>
                         <p>Custom websites that drive results</p>
                     </div>
                     <div class="card-back">
-                        <h3>Web Development</h3>
-                        <p>We create stunning, responsive websites that captivate your audience and drive engagement.</p>
+                        <h3>Web Development Services</h3>
+                        <p>We create stunning, responsive websites that captivate your audience and drive engagement. Our web development services in South Africa include modern design and SEO optimization.</p>
                         <ul>
-                            <li>Responsive Design</li>
+                            <li>Responsive Web Design</li>
                             <li>E-commerce Solutions</li>
                             <li>CMS Integration</li>
                             <li>SEO Optimization</li>
                             <li>Performance Optimization</li>
                         </ul>
                         <div class="price">Starting at R999</div>
-                        <a href="#" class="btn">Learn More</a>
+                        <a href="contact.html" class="btn">Get Quote</a>
                     </div>
                 </div>
             </div>
 
             <!-- Software Development Card -->
-            <div class="service-card">
+            <div class="service-card" data-category="development">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="services-icon">
-                            <i class="fas fa-laptop"></i>
+                            <i class="fas fa-laptop" aria-hidden="true"></i>
                         </div>
                         <h2>Software Development</h2>
                         <p>Custom solutions for your business</p>
                     </div>
                     <div class="card-back">
-                        <h3>Software Development</h3>
-                        <p>Our expert team designs and develops custom software solutions that streamline your operations.</p>
+                        <h3>Software Development Services</h3>
+                        <p>Our expert team designs and develops custom software solutions that streamline your operations and improve business efficiency across South Africa.</p>
                         <ul>
                             <li>Custom Applications</li>
                             <li>Database Design</li>
@@ -83,24 +224,24 @@
                             <li>Maintenance & Support</li>
                         </ul>
                         <div class="price">Starting at R2,500</div>
-                        <a href="#" class="btn">Learn More</a>
+                        <a href="contact.html" class="btn">Get Quote</a>
                     </div>
                 </div>
             </div>
 
             <!-- IT Support Card -->
-            <div class="service-card">
+            <div class="service-card" data-category="support">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="services-icon">
-                            <i class="fas fa-headset"></i>
+                            <i class="fas fa-headset" aria-hidden="true"></i>
                         </div>
                         <h2>IT Support</h2>
                         <p>Reliable technology assistance</p>
                     </div>
                     <div class="card-back">
-                        <h3>IT Support</h3>
-                        <p>We provide reliable IT support services to ensure your technology infrastructure runs smoothly.</p>
+                        <h3>IT Support Services</h3>
+                        <p>We provide reliable IT support services across South Africa to ensure your technology infrastructure runs smoothly and efficiently.</p>
                         <ul>
                             <li>24/7 Help Desk</li>
                             <li>Network Setup & Security</li>
@@ -109,24 +250,24 @@
                             <li>Data Backup Solutions</li>
                         </ul>
                         <div class="price">Plans from R99/month</div>
-                        <a href="#" class="btn">Learn More</a>
+                        <a href="contact.html" class="btn">Get Quote</a>
                     </div>
                 </div>
             </div>
 
             <!-- Custom PC Builds Card -->
-            <div class="service-card">
+            <div class="service-card" data-category="hardware">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="services-icon">
-                            <i class="fas fa-desktop"></i>
+                            <i class="fas fa-desktop" aria-hidden="true"></i>
                         </div>
                         <h2>Custom PC Builds</h2>
                         <p>Tailored to your specific needs</p>
                     </div>
                     <div class="card-back">
-                        <h3>Custom PC Builds</h3>
-                        <p>Get high-performance custom-built PCs tailored to your specific needs, whether for gaming, work, or creative tasks.</p>
+                        <h3>Custom PC Building Services</h3>
+                        <p>Get high-performance custom-built PCs tailored to your specific needs, whether for gaming, work, or creative tasks. We serve clients throughout South Africa.</p>
                         <ul>
                             <li>Gaming PCs</li>
                             <li>Workstation Builds</li>
@@ -135,24 +276,24 @@
                             <li>Performance Testing</li>
                         </ul>
                         <div class="price">Starting at R800</div>
-                        <a href="#" class="btn">Learn More</a>
+                        <a href="contact.html" class="btn">Get Quote</a>
                     </div>
                 </div>
             </div>
 
             <!-- Photography Card -->
-            <div class="service-card">
+            <div class="service-card" data-category="creative">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="services-icon">
-                            <i class="fas fa-camera"></i>
+                            <i class="fas fa-camera" aria-hidden="true"></i>
                         </div>
                         <h2>Photography</h2>
                         <p>Professional visual content</p>
                     </div>
                     <div class="card-back">
-                        <h3>Photography</h3>
-                        <p>Capture your moments with our professional photography services for business or personal use.</p>
+                        <h3>Professional Photography Services</h3>
+                        <p>Capture your moments with our professional photography services for business or personal use. Available throughout South Africa for all your visual content needs.</p>
                         <ul>
                             <li>Product Photography</li>
                             <li>Corporate Events</li>
@@ -161,24 +302,24 @@
                             <li>Digital Delivery</li>
                         </ul>
                         <div class="price">Packages from R250</div>
-                        <a href="#" class="btn">Learn More</a>
+                        <a href="contact.html" class="btn">Get Quote</a>
                     </div>
                 </div>
             </div>
 
             <!-- Cloud Solutions Card -->
-            <div class="service-card">
+            <div class="service-card" data-category="support">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="services-icon">
-                            <i class="fas fa-cloud"></i>
+                            <i class="fas fa-cloud" aria-hidden="true"></i>
                         </div>
                         <h2>Cloud Solutions</h2>
                         <p>Scalable and secure infrastructure</p>
                     </div>
                     <div class="card-back">
-                        <h3>Cloud Solutions</h3>
-                        <p>Leverage the power of cloud computing with our comprehensive cloud solutions for businesses of all sizes.</p>
+                        <h3>Cloud Solutions Services</h3>
+                        <p>Leverage the power of cloud computing with our comprehensive cloud solutions for businesses of all sizes in South Africa.</p>
                         <ul>
                             <li>Cloud Migration</li>
                             <li>Infrastructure Setup</li>
@@ -187,8 +328,30 @@
                             <li>Ongoing Management</li>
                         </ul>
                         <div class="price">Consultation Based</div>
-                        <a href="#" class="btn">Learn More</a>
+                        <a href="contact.html" class="btn">Get Quote</a>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service Benefits Section -->
+        <div class="service-benefits" style="margin-top: 60px; padding: 40px 20px; background: linear-gradient(rgba(0,2,34,0.9), rgba(0,2,34,0.9)); border-radius: 12px; color: white;">
+            <h2 style="text-align: center; margin-bottom: 30px; color: white;">Why Choose Our Technology Services?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+                <div style="text-align: center; padding: 25px;">
+                    <i class="fas fa-clock" style="font-size: 2.5rem; color: red; margin-bottom: 15px;"></i>
+                    <h3 style="color: white; margin-bottom: 15px;">Fast Delivery</h3>
+                    <p style="color: rgba(255,255,255,0.9);">Quick turnaround times without compromising on quality for all our technology services.</p>
+                </div>
+                <div style="text-align: center; padding: 25px;">
+                    <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: red; margin-bottom: 15px;"></i>
+                    <h3 style="color: white; margin-bottom: 15px;">Quality Guarantee</h3>
+                    <p style="color: rgba(255,255,255,0.9);">All our services come with a quality guarantee and ongoing support for your peace of mind.</p>
+                </div>
+                <div style="text-align: center; padding: 25px;">
+                    <i class="fas fa-hand-holding-usd" style="font-size: 2.5rem; color: red; margin-bottom: 15px;"></i>
+                    <h3 style="color: white; margin-bottom: 15px;">Competitive Pricing</h3>
+                    <p style="color: rgba(255,255,255,0.9);">Affordable technology solutions tailored to your budget without hidden costs.</p>
                 </div>
             </div>
         </div>
@@ -196,29 +359,30 @@
 
     <!------------------ FOOTER ----------------->
     <section class="footer">
-    <h4>About Us</h4>
-    <p>Trinity Tech Solutions is committed to delivering innovative technology solutions that drive business growth.</p>
+        <h4>About Trinity Tech Solutions</h4>
+        <p>Trinity Tech Solutions is committed to delivering innovative technology solutions that drive business growth and digital transformation across South Africa.</p>
 
-    <div class="icons">
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-x-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-whatsapp"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-    </div>
+        <div class="icons">
+            <a href="https://facebook.com/trinitytechsolutions" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/trinitytech" aria-label="Follow us on Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://instagram.com/trinitytechsolutions" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/277888877444" aria-label="Contact us on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://linkedin.com/company/trinity-tech-solutions" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
 
-    <!-- Navigation Links -->
-    <div class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html">Latest Projects</a>
-        <a href="contact.html">Contact</a>
-    </div>
+        <!-- Navigation Links -->
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Latest Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="enquiry.html">Enquiry</a>
+        </div>
 
-    
-    <p class="footer-copy">&copy; 2025 Trinity Tech Solutions. All rights reserved.</p>
-</section>
-    <script src="JS/script.js"></script>
+        <p class="footer-copy">&copy; 2025 Trinity Tech Solutions. All rights reserved.</p>
+    </section>
+
+    <script src="JS/script.js"></script defer>
 </body>
 </html>

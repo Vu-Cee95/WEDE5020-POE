@@ -2,51 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View Trinity Tech Solutions' latest projects including e-commerce platforms, mobile apps, cloud infrastructure, data analytics, and AI integration solutions in South Africa.">
+    <meta name="keywords" content="web development projects, mobile app development, e-commerce platforms, cloud infrastructure, data analytics, AI integration, technology portfolio South Africa">
+    <meta name="author" content="Trinity Tech Solutions">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Latest Projects | Web Development & Technology Portfolio">
+    <meta property="og:description" content="Explore our recent technology projects including e-commerce platforms, mobile apps, cloud solutions, and AI integration developed for clients across South Africa.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.trinitytechsolutions.co.za/projects">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.trinitytechsolutions.co.za/projects">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Trinity Tech Solutions Projects Portfolio",
+      "description": "Latest technology projects including web development, mobile apps, and cloud solutions",
+      "numberOfItems": "5",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "E-commerce Platform Development",
+            "description": "Custom e-commerce platform with responsive design and secure payment integration",
+            "url": "https://www.trinitytechsolutions.co.za/projects#ecommerce"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Mobile App Development",
+            "description": "Cross-platform mobile application with intuitive user interface",
+            "url": "https://www.trinitytechsolutions.co.za/projects#mobileapp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Cloud Infrastructure Setup",
+            "description": "Scalable cloud infrastructure with automated deployment and monitoring",
+            "url": "https://www.trinitytechsolutions.co.za/projects#cloud"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Data Analytics Dashboard",
+            "description": "Real-time data visualization and business intelligence dashboard",
+            "url": "https://www.trinitytechsolutions.co.za/projects#analytics"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "AI Integration Project",
+            "description": "Artificial intelligence integration for automated business processes",
+            "url": "https://www.trinitytechsolutions.co.za/projects#ai"
+          }
+        }
+      ]
+    }
+    </script>
+
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>Trinity Tech Solutions | About Us</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script defer>
+
+    <title>Latest Projects | Web Development & Technology Portfolio South Africa</title>
 </head>
 <body class="nav-still">
-    
-        <nav id="navbar">
-            <a href="index.html"><img src="./images/logo2.png" alt="Trinity Tech Solutions Logo"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Latest Projects</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-    </div> 
 
-    
+    <nav id="navbar">
+        <a href="index.html" aria-label="Trinity Tech Solutions Home">
+            <img src="./images/logo2.png" alt="Trinity Tech Solutions Logo - View Our Technology Projects" width="200" height="60" loading="lazy">
+        </a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" aria-label="Close menu"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html" class="active">Latest Projects</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" aria-label="Open menu"></i>
+    </nav>
+
     <section class="our-projects">
         <div class="heading">
-            <h1>Our Latest Projects</h1>
-            <p>Discover some of our recent work and see how we've helped our clients achieve their goals.</p>
+            <h1>Our Latest Technology Projects</h1>
+            <p>Discover some of our recent work and see how we've helped clients across South Africa achieve their digital transformation goals with cutting-edge technology solutions.</p>
         </div>
 
         <div class="gallery">
-            
             <div class="gallery-container">
-                <div class="img-item img-item1"></div>
-                <div class="img-item img-item2"></div>
-                <div class="img-item img-item3"></div>
-                <div class="img-item img-item4"></div>
-                <div class="img-item img-item5"></div>
+                <div class="img-item img-item1" data-title="E-commerce Platform Development" data-description="Custom e-commerce platform with responsive design, secure payment integration, and inventory management system"></div>
+                <div class="img-item img-item2" data-title="Mobile App Development" data-description="Cross-platform mobile application with intuitive user interface and real-time synchronization"></div>
+                <div class="img-item img-item3" data-title="Cloud Infrastructure Setup" data-description="Scalable cloud infrastructure with automated deployment, monitoring, and security protocols"></div>
+                <div class="img-item img-item4" data-title="Data Analytics Dashboard" data-description="Real-time data visualization and business intelligence dashboard with predictive analytics"></div>
+                <div class="img-item img-item5" data-title="AI Integration Project" data-description="Artificial intelligence integration for automated business processes and customer service enhancement"></div>
             </div>
-            
+
             <div class="gallery-controls">
-                <button class="prev-btn">←</button>
+                <button class="gallery-controls-previous" aria-label="View previous project">←</button>
                 <ul class="gallery-nav">
                     <li></li>
                     <li></li>
@@ -54,42 +134,140 @@
                     <li></li>
                     <li></li>
                 </ul>
-                <button class="next-btn">→</button>
+                <button class="gallery-controls-next" aria-label="View next project">→</button>
             </div>
+        </div>
+
+        <!-- Project Details Section -->
+        <div class="project-details" style="margin-top: 50px; padding: 40px 20px; background: white; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <h2 style="text-align: center; margin-bottom: 40px; color: #000222;">Project Highlights & Technologies</h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="project-highlight" style="padding: 25px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid red;">
+                    <h3 style="color: #000222; margin-bottom: 15px;">E-commerce Platform</h3>
+                    <p style="color: #666; margin-bottom: 15px;">Complete online store with shopping cart, payment gateway, and inventory management</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <span style="background: #000222; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">React</span>
+                        <span style="background: #000222; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">Node.js</span>
+                        <span style="background: #000222; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">MongoDB</span>
+                        <span style="background: #000222; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">Stripe API</span>
+                    </div>
+                </div>
+
+                <div class="project-highlight" style="padding: 25px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid red;">
+                    <h3 style="color: #000222; margin-bottom: 15px;">Mobile Application</h3>
+                    <p style="color: #666; margin-bottom: 15px;">Cross-platform mobile app with offline functionality and push notifications</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <span style="background: #000222; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">React Native</span>
+                        <span style="background: #000222; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">Firebase</span>
+                        <span style="background: #000222; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">Redux</span>
+                        <span style="background: #000222; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">REST API</span>
+                    </div>
+                </div>
+
+                <div class="project-highlight" style="padding: 25px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid red;">
+                    <h3 style="color: #000222; margin-bottom: 15px;">Cloud Infrastructure</h3>
+                    <p style="color: #666; margin-bottom: 15px;">Scalable cloud solution with automated deployment and monitoring</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <span style="background: #000222; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">AWS</span>
+                        <span style="background: #000222; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">Docker</span>
+                        <span style="background: #000222; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">Kubernetes</span>
+                        <span style="background: #000222; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">Terraform</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Client Testimonials Section -->
+        <div class="testimonials" style="margin-top: 60px; padding: 50px 20px; background: linear-gradient(rgba(0,2,34,0.9), rgba(0,2,34,0.9)); border-radius: 12px; color: white;">
+            <h2 style="text-align: center; margin-bottom: 40px; color: white;">What Our Clients Say</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="testimonial" style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 8px; backdrop-filter: blur(10px);">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: red; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
+                            <i class="fas fa-user" style="color: white;"></i>
+                        </div>
+                        <div>
+                            <h4 style="color: white; margin: 0;">Sarah Johnson</h4>
+                            <p style="color: rgba(255,255,255,0.7); margin: 0; font-size: 0.9rem;">CEO, Retail Solutions SA</p>
+                        </div>
+                    </div>
+                    <p style="color: rgba(255,255,255,0.9); font-style: italic;">"The e-commerce platform developed by Trinity Tech Solutions transformed our online sales. Their attention to detail and technical expertise exceeded our expectations."</p>
+                </div>
+
+                <div class="testimonial" style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 8px; backdrop-filter: blur(10px);">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: red; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
+                            <i class="fas fa-user" style="color: white;"></i>
+                        </div>
+                        <div>
+                            <h4 style="color: white; margin: 0;">Michael Brown</h4>
+                            <p style="color: rgba(255,255,255,0.7); margin: 0; font-size: 0.9rem;">CTO, Tech Innovations</p>
+                        </div>
+                    </div>
+                    <p style="color: rgba(255,255,255,0.9); font-style: italic;">"The mobile app development was seamless and professional. Trinity Tech delivered on time and within budget, with excellent ongoing support."</p>
+                </div>
+
+                <div class="testimonial" style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 8px; backdrop-filter: blur(10px);">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: red; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
+                            <i class="fas fa-user" style="color: white;"></i>
+                        </div>
+                        <div>
+                            <h4 style="color: white; margin: 0;">David Wilson</h4>
+                            <p style="color: rgba(255,255,255,0.7); margin: 0; font-size: 0.9rem;">Operations Manager, DataFlow Inc</p>
+                        </div>
+                    </div>
+                    <p style="color: rgba(255,255,255,0.9); font-style: italic;">"The cloud infrastructure setup has significantly improved our operational efficiency. Trinity's expertise in cloud solutions is impressive."</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div class="project-cta" style="text-align: center; margin-top: 50px; padding: 40px 20px;">
+            <h2 style="color: #000222; margin-bottom: 20px;">Ready to Start Your Project?</h2>
+            <p style="color: #666; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">Let's discuss how we can bring your technology vision to life with our expert development services.</p>
+            <a href="contact.html" class="read-more" style="display: inline-block;">Start Your Project</a>
         </div>
     </section>
 
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="enlargedImg">
+    <!-- Project Gallery Modal -->
+    <div class="project-modal">
+        <span class="close-project-modal" aria-label="Close project view">&times;</span>
+        <div class="project-modal-title" id="projectModalTitle"></div>
+        <img class="project-modal-content" id="projectModalImg" alt="" loading="lazy">
+        <div class="project-modal-description" id="projectModalDescription" style="position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%); color: white; text-align: center; background: rgba(0,2,34,0.8); padding: 15px 25px; border-radius: 8px; max-width: 80%; backdrop-filter: blur(10px);"></div>
+        <div class="project-modal-counter" id="projectModalCounter"></div>
+        <div class="project-modal-nav">
+            <button class="project-modal-btn prev-project-btn" aria-label="Previous project">❮</button>
+            <button class="project-modal-btn next-project-btn" aria-label="Next project">❯</button>
+        </div>
     </div>
 
-
-    <!------------------ FOOTER ----------------->
     <section class="footer">
-    <h4>About Us</h4>
-    <p>Trinity Tech Solutions is committed to delivering innovative technology solutions that drive business growth.</p>
+        <h4>About Trinity Tech Solutions</h4>
+        <p>Trinity Tech Solutions is committed to delivering innovative technology solutions that drive business growth and digital transformation across South Africa.</p>
 
-    <div class="icons">
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-x-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-whatsapp"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-    </div>
+        <div class="icons">
+            <a href="https://facebook.com/trinitytechsolutions" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/trinitytech" aria-label="Follow us on Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://instagram.com/trinitytechsolutions" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/277888877444" aria-label="Contact us on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://linkedin.com/company/trinity-tech-solutions" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
 
-    <!-- Navigation Links -->
-    <div class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html">Latest Projects</a>
-        <a href="contact.html">Contact</a>
-    </div>
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Latest Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="enquiry.html">Enquiry</a>
+        </div>
 
-    
-    <p class="footer-copy">&copy; 2025 Trinity Tech Solutions. All rights reserved.</p>
-</section>
-    <script src="JS/script.js"></script>
+        <p class="footer-copy">&copy; 2025 Trinity Tech Solutions. All rights reserved.</p>
+    </section>
+
+    <script src="JS/script.js"></script defer>
 </body>
 </html>
