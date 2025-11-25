@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="index, follow">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Trinity Tech Solutions offers comprehensive IT services including web development, software development, IT support, custom PC builds, photography, and cloud solutions in South Africa.">
     <meta name="keywords" content="web development services, software development, IT support, custom PC builds, cloud solutions, photography services, technology services South Africa">
@@ -94,7 +93,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script defer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <title>IT Services | Web Development, Software & Technology Solutions South Africa</title>
 </head>
@@ -178,7 +177,7 @@
 
         <div class="services-container">
             <!-- Web Development Card -->
-            <div class="service-card" data-category="development">
+            <div class="service-card" data-category="development" data-price="999">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="services-icon">
@@ -204,7 +203,7 @@
             </div>
 
             <!-- Software Development Card -->
-            <div class="service-card" data-category="development">
+            <div class="service-card" data-category="development" data-price="2500">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="services-icon">
@@ -230,7 +229,7 @@
             </div>
 
             <!-- IT Support Card -->
-            <div class="service-card" data-category="support">
+            <div class="service-card" data-category="support" data-price="99">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="services-icon">
@@ -256,7 +255,7 @@
             </div>
 
             <!-- Custom PC Builds Card -->
-            <div class="service-card" data-category="hardware">
+            <div class="service-card" data-category="hardware" data-price="800">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="services-icon">
@@ -282,7 +281,7 @@
             </div>
 
             <!-- Photography Card -->
-            <div class="service-card" data-category="creative">
+            <div class="service-card" data-category="creative" data-price="250">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="services-icon">
@@ -308,7 +307,7 @@
             </div>
 
             <!-- Cloud Solutions Card -->
-            <div class="service-card" data-category="support">
+            <div class="service-card" data-category="support" data-price="0">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="services-icon">
@@ -331,6 +330,13 @@
                         <a href="contact.html" class="btn">Get Quote</a>
                     </div>
                 </div>
+            </div>
+            
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults">
+                <i class="fas fa-search"></i>
+                <h3>No Services Found</h3>
+                <p>We couldn't find any services matching your search criteria. Try adjusting your filters or search terms.</p>
             </div>
         </div>
 
@@ -383,6 +389,7 @@
         <p class="footer-copy">&copy; 2025 Trinity Tech Solutions. All rights reserved.</p>
     </section>
 
-    <script src="JS/script.js"></script defer>
+    <script src="JS/script.js"></script>
+    <script src="JS/services.js"></script>
 </body>
 </html>

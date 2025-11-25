@@ -7,24 +7,17 @@
     <meta name="keywords" content="contact Trinity Tech Solutions, web development South Africa, IT support contact, software development quotes, technology consultation">
     <meta name="author" content="Trinity Tech Solutions">
     
-    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Contact Us | Technology Solutions South Africa">
     <meta property="og:description" content="Get in touch with Trinity Tech Solutions for professional web development, software solutions, IT support, and custom technology services across South Africa.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.trinitytechsolutions.co.za/contact">
     
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://www.trinitytechsolutions.co.za/contact">
     
-    <!-- SweetAlert2 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="CSS/style.css">
     
     <title>Contact Trinity Tech Solutions | Web Development & IT Services South Africa</title>
@@ -58,9 +51,8 @@
         <div class="contact-wrapper">
             <div class="contact-form">
                 <h3>Send us a Message</h3>
-                <p style="color: #666; margin-bottom: 20px; font-size: 0.9rem;">Fill out the form below and our technology experts will get back to you within 24 hours.</p>
+                <p>Fill out the form below and our technology experts will get back to you within 24 hours.</p>
                 
-                <!-- Enhanced Contact Form -->
                 <form id="contactForm" action="https://formspree.io/f/mqanbjwq" method="POST" novalidate data-reliable="true">
                     <div class="form-group">
                         <label for="contactName">Full Name *</label>
@@ -132,15 +124,78 @@
                 <p><i class="fa fa-clock" aria-hidden="true"></i>Saturday: 10:00 AM - 2:00 PM</p>
                 <p><i class="fa fa-globe" aria-hidden="true"></i>Sunday: Closed</p>
                 
-                <div class="emergency-contact" style="margin-top: 25px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 8px; border-left: 3px solid red;">
-                    <h4 style="color: white; margin-bottom: 10px;">Emergency IT Support</h4>
-                    <p style="color: rgba(255,255,255,0.9); margin-bottom: 8px;"><i class="fa fa-phone" aria-hidden="true"></i>+27 788 88774 45</p>
-                    <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">Available 24/7 for critical IT issues</p>
+                <div class="emergency-contact">
+                    <h4>Emergency IT Support</h4>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i>+27 788 88774 45</p>
+                    <p>Available 24/7 for critical IT issues</p>
                 </div>
             </div>
         </div>
 
-        <!-- Rest of the contact page content remains the same -->
+        <section class="map-section">
+            <h3>Find Us</h3>
+            <div class="map-controls">
+                <button class="map-btn active" data-map-type="street">Street View</button>
+                <button class="map-btn" data-map-type="satellite">Satellite View</button>
+            </div>
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+            <p class="map-info">Click on the marker for directions to our location</p>
+        </section>
+
+        
+
+        <section class="contact-faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-header">
+                <h3>What are your response times?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-content">
+                <p>We typically respond to all inquiries within 24 hours. Emergency IT support requests are prioritized and responded to within 1-2 hours.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-header">
+                <h3>Do you offer remote support?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-content">
+                <p>Yes, we provide comprehensive remote IT support for most software and network-related issues across South Africa.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-header">
+                <h3>What areas do you serve?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-content">
+                <p>We primarily serve the Carletonville and West Rand areas for on-site services, but offer remote support and web development services nationwide.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-header">
+                <h3>What are your business hours?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-content">
+                <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-header">
+                <h3>Do you offer free consultations?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-content">
+                <p>Yes! We offer free initial consultations for all new projects. Contact us to schedule a meeting to discuss your technology needs.</p>
+            </div>
+        </div>
+    </div>
+</section>
     </section>
 
     <section class="footer">
@@ -167,11 +222,7 @@
         <p class="footer-copy">&copy; 2025 Trinity Tech Solutions. All rights reserved.</p>
     </section>
 
-    <!-- SweetAlert2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <!-- Custom JS -->
     <script src="JS/script.js"></script>
-</body>
-</html>
+    
